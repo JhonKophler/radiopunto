@@ -1,5 +1,5 @@
 <!DOCTYPE <!DOCTYPE html>
-<html lang="es" class="ht">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -24,10 +24,12 @@
                     <h1 class="punto">Punto</h1>
                 </div>
                 <div class="link-header">
-                    <a href="#programas">programación</a>
-                    <a href="#sponsors">sponsors</a>
-                    <a href="#talento">@talentoEmergente</a>
-                    <a href="#publicitate">PUBLICITATE!!</a>
+                    <div class="link-line-bottom">
+                        <a href="#programas">programas</a>
+                        <a href="#sponsors">sponsors</a>
+                        <a href="#talento">@talentoEmergente</a>
+                        <a href="#publicitate">PUBLICITATE!!</a>
+                    </div>
                 </div>
                 <div class="hamburger">
                     <i class="fas fa-bars"></i>
@@ -37,18 +39,19 @@
     </header>
 
     <!-- VIDEO DE YOUTUBE -->
-    <div class="contenedor-video">
-        <iframe src="https://www.youtube.com/embed/gfiPOgsNO2M?autoplay=1" frameborder="0"
+    <figure class="content-media content-media--video" id="featured-media">
+        <iframe class="content-media__object" id="featured-video"
+        src="https://www.youtube.com/embed/YTvJSMOUlbI?autoplay=1&enablejsapi=1" frameborder="0"
             allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture"
             allowfullscreen></iframe>
-    </div>
+    </figure>
 
     <!--Barra Movible-->
     <div class="txt-header">
         <h2>Tu Radio Online 24/7</h2>
     </div>
 
-    <!-- Programacion -->
+    <!-- Programas -->
     <section id="programas" class="program">
 
         <div class="contenido-semana">
@@ -211,7 +214,9 @@
             </div>
 
             <div class="it">
-                <h5>Quiénes Somos</h5>
+                <a href="#">
+                    <h5>Quiénes Somos</h5>
+                </a>
             </div>
 
             <div class="it">
@@ -238,6 +243,9 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/977a02dee3.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/actions.js"></script>
 </body>
 
 </html>
